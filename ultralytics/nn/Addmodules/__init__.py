@@ -113,7 +113,6 @@ from .HWD import *
 from .C2fGhostModuleDynamicConv import *
 from .MobileNetV4 import *
 from .UIB import *
-from .AirNet import *
 from .ADNet import *
 from .RIDNET import *
 from .CSPSE import *

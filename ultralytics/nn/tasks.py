@@ -948,7 +948,7 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
                    SELayerV1, SELayerV2, HAT, EMA, MLCA, ACmix, CARAFE, DAttentionBaseline, iRMB_EMA,
                    deformable_LKA_Attention, FocalModulation, FocusedLinearAttention, HAT, iRMB, LSKA, TripletAttention,
                    OREPA, SCINet, Dy_Sample, CA, iAT, MultiSEAM, SEAM, deformable_LKA_Attention, ECA, GAM, CoordAtt, CBAM,
-                   SPDEMA, AirNet, ADNet, RIDNET}:
+                   SPDEMA, ADNet, RIDNET}:
             c2 = ch[f]
             args = [c2, *args]
         # ---------------------------------------注意力机制-----------------------
