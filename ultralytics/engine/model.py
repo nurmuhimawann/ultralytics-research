@@ -147,7 +147,7 @@ class Model(nn.Module):
 
         # Load or create new YOLO model
         if Path(model).suffix in {".yaml", ".yml"}:
-            self._new(model, task=task, verbose=verbose)
+            self._new(model, task=task)
         else:
             self._load(model, task=task)
 
@@ -203,7 +203,7 @@ class Model(nn.Module):
             )
         )
 
-    def _new(self, cfg: str, task=None, model=None, verbose=False) -> None:
+    def _new(self, cfg: str, task=None, model=None, verbose=True) -> None:
         """
         Initializes a new model and infers the task type from the model definitions.
 
